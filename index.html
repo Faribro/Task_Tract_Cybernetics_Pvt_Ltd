@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRACT_CYBERNETICS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <div id="container">
+    <h1>TRACT_CYBERNETICS</h1>
+    <p>
+        <a href="#" onclick="showAlert()">Click me</a>
+    </p>
+    </div>
+
+    <!-- Design an beautifully and outstanding website using html, css and javaScript using the below instructions and write the code for it in a clear manner. Instructions :  I. Register Page
+
+    The register page should include a form for the user to enter their information, such as name, email address, and password. The form should also include a submit button that will store the user's information in a database.
+
+    II. Login Page & Log Out Page
+
+    The login page should include a form for the user to enter their email address and password. The form should also include a submit button that will retrieve the user's information from the database and open the web page. The log out page should include a button that will close the web page when clicked.
+
+    III. Measurement Tool (Area & Length), Draw Control Tool Bar
+
+    The measurement tool should allow users to measure areas and lengths on the map using basic libraries such as Open Layer, Map Box or Leaflet. The draw control tool bar should allow users to draw shapes on the map, such as circles, rectangles, and polygons.
+
+    IV. Base Map Layers & Vector Layers
+
+    The base map layers should provide an overview of an area by displaying roads, buildings, parks, etc., while vector layers can be used to display more detailed information such as points of interest or specific features of an area.
+
+    V. GeoJSON File To Map
+    The GeoJSON file should be added to the map in order to display geographic data in a structured format that can be easily read by computers and other devices. This file can be used to display points of interest or specific features of an area on the map.
+
+    VI. PDF Button To Download Map
+    A PDF button should be added to allow users to download a map with latlng and scalebar included in it. This will allow users to view their maps offline or print them out for reference purposes. Additionally, when a user logs into the website their username should be displayed on the web page for easy identification purposes.
+    user
+    Design an beautifully and outstanding website using html, css and javaScript using the below instructions and write the code for it in a clear manner -->
+
+
+    <div id="container">
+    <div id="header">
+    <h1>TRACT_CYBERNETICS</h1>
+    </div>
+    <div id="content">
+    <form name="registerForm" action="" onsubmit="return validateForm()">
+    <div class="form-group">
+    <label for="name">Name</label><br />
+    <input type="text" name="name"/>
+    </div>
+    <div class="form-group">
+    <label for="email">Email</label><br />
+    <input type="text" name="email"/>
+    </div>
+    <div class="form-group">
+    <label for="password">Password</label><br />
+    <input type="password" name="password"/>
+    </div>
+    <input type=submit value=Submit />
+    </form>
+    <form name=loginForm action="" onsubmit=return validateLogin() >
+    <div class=formGroup >
+    <label for=email >Email</label ><br />
+    <input type=text name=email />
+    </div >
+
+    <div class=formGroup >
+    <label for=password >Password</label ><br />
+    <input type=password name=password />
+    </div >
+
+    <input type=submit value=Submit />
+    </form >
+    </div >
+    <div id=footer >
+    <p >Footer</p >
+    </div >
+    </div >
+
+
+    <script >
+    function validateForm() {
+    var name = document.forms["registerForm"]["name"].value;
+    var email = document.forms["registerForm"]["email"].value;
+    var password = document.forms["registerForm"]["password"].value;
+    if (name == "") {
+    alert("Name must be filled out");
+    return false;
+    }
+    if (email == "") {
+    alert("Email must be filled out");
+    return false;
+    }
+    if (password == "") {
+    alert("Password must be filled out");
+    return false;
+    }
+    }
+    function validateLogin() {
+    var email = document.forms["loginForm"]["email"].value;
+    var password = document.forms["loginForm"]["password"].value;
+    if (email == "") {
+    alert("Email must be filled out");
+    return false;
+    }
+
+    if (password == "") {
+    alert("Password must be filled out");
+    return false;
+    }
+    }
+    function showAlert() {
+    alert("Hello World");
+    }
+
+    </script >
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #0099cc;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+a {
+    color: #0099cc;
+}
